@@ -1,0 +1,246 @@
+@font-face {
+  font-display: swap;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bellefair-v14-latin-regular.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.MOON {
+  background-image: url("../images/moon-body.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  max-width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 78px;
+}
+
+.header-left {
+  margin-left: 55px;
+}
+
+.header-right {
+  max-width: 830px;
+  background-color: rgba(255, 255, 255, 0.0392156863);
+}
+
+.header-list {
+  padding: 39px 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+}
+.header-list a {
+  color: white;
+  opacity: 0.4;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  transition: all 0.4s;
+}
+.header-list a:hover {
+  opacity: 1;
+}
+.header-list strong {
+  color: white;
+  margin-right: 14px;
+}
+
+.header-hr {
+  max-width: 473px;
+  margin-left: 58px;
+  opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-top: 0px;
+  }
+  .header-right {
+    margin-right: -480px;
+  }
+  .header-list {
+    padding: 39px 48px;
+    gap: 37px;
+  }
+}
+@media (max-width: 375px) {
+  .header-left {
+    margin: 24px;
+  }
+  .header-list {
+    padding: 39px 47px;
+  }
+  .header-hr, .header-list li strong {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+}
+.moon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 206px;
+}
+
+.moon-left p {
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33.6px;
+  letter-spacing: 4.7249999046px;
+  color: white;
+  margin-bottom: 64px;
+}
+.moon-left p span {
+  color: #565656;
+  margin-right: 28px;
+}
+
+.moon-right ul {
+  max-width: 285px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 37px;
+}
+.moon-right ul a {
+  color: white;
+  opacity: 0.4;
+  transition: all 0.4s;
+}
+.moon-right ul a:hover {
+  opacity: 1;
+}
+.moon-right ul a:active {
+  color: #c5cdff;
+}
+.moon-right h1 {
+  font-family: Bellefair;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 114.6px;
+  color: white;
+}
+.moon-right .p {
+  max-width: 444px;
+  margin-bottom: 54px;
+}
+.moon-right .p p {
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: white;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 79px;
+  margin-top: 28px;
+}
+.data .data-left strong, .data .data-right strong {
+  color: #D0D6F9;
+  font-family: Barlow Condensed;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 2.3624999523px;
+}
+.data .data-left h2, .data .data-right h2 {
+  font-family: Bellefair;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32.09px;
+  text-align: left;
+  color: white;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .moon {
+    flex-direction: column;
+    gap: 26px;
+  }
+  .moon-left p {
+    margin-left: -350px;
+  }
+  .moon-right ul {
+    margin: 0 auto;
+    max-width: 285px;
+    margin-bottom: 32px;
+  }
+  .moon-right h1 {
+    margin-left: 135px;
+  }
+  .moon-right .p {
+    max-width: 580px;
+    text-align: center;
+  }
+  .moon-right .data {
+    margin-bottom: 62px;
+  }
+}
+@media (max-width: 375px) {
+  .moon {
+    flex-direction: column;
+    gap: 26px;
+  }
+  .moon-left p {
+    margin-left: 0px;
+  }
+  .moon-right ul {
+    margin: 0 auto;
+    max-width: 285px;
+    margin-bottom: 32px;
+  }
+  .moon-right h1 {
+    margin-left: 135px;
+  }
+  .moon-right .p {
+    max-width: 580px;
+    text-align: center;
+  }
+  .moon-right .data {
+    margin-bottom: 62px;
+    flex-direction: column;
+  }
+  .moon-right .data-right, .moon-right .data-left {
+    max-width: 300px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */
