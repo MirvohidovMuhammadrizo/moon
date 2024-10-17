@@ -260,18 +260,18 @@
 }
 
 .space-header-right {
-  background-color: rgba(255, 255, 255, 0.0392156863);
+  -webkit-backdrop-filter: blur(81.5484542847px);
+          backdrop-filter: blur(81.5484542847px);
 }
 
 .space-header-list {
+  margin-right: 130px;
   padding: 39px 41px 39px 90px;
   display: flex;
   color: black;
   justify-content: space-between;
   align-items: center;
   gap: 48px;
-  -webkit-backdrop-filter: blur(81.5484542847px);
-          backdrop-filter: blur(81.5484542847px);
 }
 .space-header-list a {
   color: white;

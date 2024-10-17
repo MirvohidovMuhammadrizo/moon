@@ -13,9 +13,10 @@
     align-items: center;
 }
 .space-header-right {
-    background-color:#FFFFFF0A;
+    backdrop-filter: blur(81.54845428466797px)
 }
 .space-header-list {
+    margin-right: 130px;
     padding: 39px 41px 39px 90px;
     display: flex;
     color: black;
@@ -34,7 +35,6 @@
         color: white;
         margin-right: 14px;
     }
-    backdrop-filter: blur(81.54845428466797px)
 }
 .space-header-hr{
     z-index: 999;
