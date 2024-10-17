@@ -1,0 +1,234 @@
+.MOON{
+    background-image: url("../images/moon-body.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header {
+    max-width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 78px;
+}
+.header-left {
+    margin-left: 55px;
+}
+.header-right {
+    max-width: 830px;
+    background-color:#FFFFFF0A;
+}
+.header-list {
+    padding: 39px 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    a{
+        color: white;
+        opacity: 0.4;
+        font-family: Barlow Condensed;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        transition: all 0.4s;
+    }
+    a:hover{
+        opacity: 1;
+    }
+    strong{
+        color: white;
+        margin-right: 14px;
+    }
+}
+.header-hr{
+    max-width: 473px;
+    margin-left: 58px;
+    opacity: 0.4;
+}
+
+@media(max-width:768px){
+    .header{
+        margin-top: 0px;
+    }
+    .header-right{
+        margin-right: -480px;
+    }
+    .header-list{
+        padding: 39px 48px;
+        gap: 37px;
+    }
+}
+@media(max-width:768px){
+    
+}
+@media(max-width:375px){
+    .header-left{
+        margin: 24px;
+    }
+    .header-list{
+        padding: 39px 47px;
+    }
+    .header-hr, .header-list li strong{
+        display: none;
+    }
+    .header-right{
+        display: none;
+    }
+}
+
+
+.moon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 206px;
+}
+.moon-left{
+    p{
+        font-family: Barlow Condensed;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 33.6px;
+        letter-spacing: 4.724999904632568px;
+        color: white;
+        margin-bottom: 64px;
+        span{
+            color: #565656;
+            margin-right: 28px;
+        }
+    }
+}
+
+.moon-right {
+    ul{
+        max-width: 285px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 35px;
+        margin-bottom: 37px;
+        li{
+        }
+        a{
+            color: white;
+            opacity: 0.4;
+            transition: all 0.4s;
+        }
+        a:hover{
+            opacity: 1;
+        }
+        a:active{
+            color: #c5cdff;
+        }
+    }
+    h1{
+        font-family: Bellefair;
+        font-size: 100px;
+        font-weight: 400;
+        line-height: 114.6px;
+        color: white;
+    }
+    .p{
+        max-width: 444px;
+        margin-bottom: 54px;
+        p{
+            font-family: Barlow;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 32px;
+            color: white;
+        }
+    }
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 79px;
+    margin-top: 28px;
+    .data-left , .data-right{
+        strong{
+            color: #D0D6F9;
+            font-family: Barlow Condensed;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.8px;
+            letter-spacing: 2.362499952316284px;
+        }
+        h2{
+            font-family: Bellefair;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 32.09px;
+            text-align: left;
+            color: white;
+            margin-top: 12px;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .moon{
+        flex-direction: column;
+        gap: 26px;
+    }
+    .moon-left{
+        p{
+            margin-left: -350px;
+        }
+    }
+    .moon-right{
+        ul{
+            margin: 0 auto;
+        max-width: 285px;
+        margin-bottom: 32px;
+        }
+        h1{
+            margin-left: 135px;
+        }
+        .p{
+            max-width: 580px;
+            text-align: center;
+        }
+        .data{
+            margin-bottom: 62px;
+        }
+    }
+}
+
+
+
+@media(max-width:375px){
+    .moon{
+        flex-direction: column;
+        gap: 26px;
+    }
+    .moon-left{
+        p{
+            margin-left: 0px;
+        }
+    }
+    .moon-right{
+        ul{
+            margin: 0 auto;
+        max-width: 285px;
+        margin-bottom: 32px;
+        }
+        h1{
+            margin-left: 135px;
+        }
+        .p{
+            max-width: 580px;
+            text-align: center;
+        }
+        .data{
+            margin-bottom: 62px;
+            flex-direction: column;
+        }
+        .data-right, .data-left{
+            max-width: 300px;
+            text-align: center;
+        }        
+    }
+}
